@@ -119,4 +119,3 @@ Feedstock Maintainers
 * [@savingoyal](https://github.com/savingoyal/)
 * [@xhochy](https://github.com/xhochy/)
 
-
