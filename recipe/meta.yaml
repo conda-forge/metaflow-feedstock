@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - boto3
-    - click
+    - click >=7.0
     - requests
     - setuptools
 
