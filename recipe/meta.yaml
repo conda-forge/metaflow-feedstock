@@ -1,20 +1,20 @@
 {% set name = "metaflow" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: c7d28b3a78758efc6e46b743f7ccd0e731bae531fe7fd2e6b2e3acfd6023ec80
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 1bbaea071603b0f34b8192c0554461e45840d544331df6936d51bac3787fc051
 
 build:
   number: 0
   noarch: python
   entry_points:
     - metaflow=metaflow.main_cli:main
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -47,7 +47,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: "Metaflow: More Data Science, Less Engineering"
+  summary: 'Metaflow: More Data Science, Less Engineering'
   doc_url: https://docs.metaflow.org/
   dev_url: https://github.com/Netflix/metaflow
 
