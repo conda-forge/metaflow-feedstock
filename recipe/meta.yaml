@@ -26,6 +26,7 @@ requirements:
     - click >=7.0
     - requests
     - setuptools
+    - pylint <2.5.0
 
 test:
   imports:
