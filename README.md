@@ -5,11 +5,13 @@ Home: https://metaflow.org/
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metaflow-feedstock/blob/master/LICENSE.txt)
 
 Summary: Metaflow: More Data Science, Less Engineering
 
+Development: https://github.com/Netflix/metaflow
 
+Documentation: https://docs.metaflow.org/
 
 Current build status
 ====================
