@@ -1,5 +1,5 @@
 {% set name = "metaflow" %}
-{% set version = "2.2.10" %}
+{% set version = "2.2.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: da954ddea37ecdca6772a66758519ee4af28765a5d7d85f29b4a14f847a54eea
+  sha256: 709e2a6ded42b4ff59eeff1a21de05fecc20f6db82be118b304f51e92ea0da9c
 
 build:
   number: 0
@@ -19,9 +19,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - boto3
     - click >=7.0
     - requests
@@ -54,5 +54,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - xhochy
     - savingoyal
