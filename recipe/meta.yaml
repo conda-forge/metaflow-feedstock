@@ -33,7 +33,6 @@ test:
     - metaflow
     - metaflow.client
     - metaflow.datastore
-    - metaflow.datastore.util
     - metaflow.datatools
     - metaflow.metadata
     - metaflow.plugins
