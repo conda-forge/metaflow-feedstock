@@ -30,16 +30,37 @@ requirements:
 test:
   imports:
     - metaflow
+    - metaflow._vendor
+    - metaflow._vendor.click
+    - metaflow._vendor.v3_5
+    - metaflow._vendor.v3_5.importlib_metadata
+    - metaflow._vendor.v3_6
+    - metaflow._vendor.v3_6.importlib_metadata
     - metaflow.client
     - metaflow.datastore
     - metaflow.datatools
     - metaflow.metadata
+    - metaflow.mflog
     - metaflow.plugins
+    - metaflow.plugins.argo
     - metaflow.plugins.aws
     - metaflow.plugins.aws.batch
+    - metaflow.plugins.aws.step_functions
+    - metaflow.plugins.cards
+    - metaflow.plugins.cards.card_modules
+    - metaflow.plugins.cards.card_modules.chevron
     - metaflow.plugins.conda
+    - metaflow.plugins.env_escape
+    - metaflow.plugins.env_escape.communication
+    - metaflow.plugins.env_escape.configurations
+    - metaflow.plugins.env_escape.configurations.emulate_test_lib
+    - metaflow.plugins.env_escape.configurations.test_lib_impl
+    - metaflow.plugins.frameworks
+    - metaflow.plugins.kubernetes
+    - metaflow.plugins.metadata
   commands:
     - metaflow --help
+    - metaflow tutorials list
 
 about:
   home: https://metaflow.org/
