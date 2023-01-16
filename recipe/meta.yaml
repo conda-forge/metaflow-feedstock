@@ -13,7 +13,7 @@ build:
   number: 0
   noarch: python
   entry_points:
-    - metaflow=metaflow.main_cli:main
+    - metaflow=metaflow.cmd.main_cli:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
