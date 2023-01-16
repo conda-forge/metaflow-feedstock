@@ -1,5 +1,5 @@
 {% set name = "metaflow" %}
-{% set version = "2.7.15" %}
+{% set version = "2.7.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 83ccd57a5686a106e84b11b01ce9f6ff8bab50189ce3aaba74a0ff1adc1d533b
+  sha256: 5137280d72cc78fce1e63909966c329cee698690568655766b17c8394fbab4a4
 
 build:
   number: 0
   noarch: python
   entry_points:
-    - metaflow=metaflow.main_cli:main
+    - metaflow=metaflow.cmd.main_cli:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
