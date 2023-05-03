@@ -1,5 +1,5 @@
 {% set name = "metaflow" %}
-{% set version = "2.8.3" %}
+{% set version = "2.8.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 52974b4b666d2ae429e17d6df72a93236dc093be61642dcdc5e6e8ea1cded55d
+  sha256: 8c7b06ed3d5728dda345bc1265806b964ffed71d3c5e75673ae542da92cd88a1
 
 
 build:
@@ -26,7 +26,6 @@ requirements:
     - boto3
     - requests
     - setuptools
-    - pylint
 
 test:
   imports:
