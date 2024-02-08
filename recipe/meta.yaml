@@ -1,5 +1,5 @@
 {% set name = "metaflow" %}
-{% set version = "2.10.10" %}
+{% set version = "2.11.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ad41325710a66577ca6c6465707612de19abac52c7fe378312805035b71bf51f
+  sha256: 43e1f8769bbd944c0514d2358ea558d3b69a3f40ec2d4c71343b87b632230685
 
 
 build:
