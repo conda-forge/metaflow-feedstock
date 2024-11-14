@@ -34,7 +34,7 @@ test:
     - metaflow.client
     - metaflow.datastore
     - metaflow.datatools
-    - metaflow.metadata
+    - metaflow.metadata_provider
     - metaflow.plugins
     - metaflow.plugins.aws
     - metaflow.plugins.aws.batch
