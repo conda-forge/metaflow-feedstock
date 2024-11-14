@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=2.7
+    - setuptools
   run:
     - python >=2.7
     - boto3
