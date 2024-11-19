@@ -1,5 +1,5 @@
 {% set name = "metaflow" %}
-{% set version = "2.12.26" %}
+{% set version = "2.12.30" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8cdffae965aae8d7938bd69b3acd11c3e146343a6e009961963ce880b3b962b4
+  sha256: 174b83ad2449ecafba571e2ff7436fc391d9faa21566a40f9bbe556898d69f1d
 
 
 build:
@@ -34,7 +34,7 @@ test:
     - metaflow.client
     - metaflow.datastore
     - metaflow.datatools
-    - metaflow.metadata
+    - metaflow.metadata_provider
     - metaflow.plugins
     - metaflow.plugins.aws
     - metaflow.plugins.aws.batch
