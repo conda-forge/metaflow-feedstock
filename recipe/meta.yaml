@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - metaflow=metaflow.cmd.main_cli:start
@@ -20,15 +20,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - boto3
     - requests
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - metaflow
     - metaflow.client
