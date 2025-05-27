@@ -147,9 +147,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@madhur-ob](https://github.com/madhur-ob/)
 * [@saikonen](https://github.com/saikonen/)
 * [@savingoyal](https://github.com/savingoyal/)
-
-
-<!-- dummy commit to enable rerendering -->
 
