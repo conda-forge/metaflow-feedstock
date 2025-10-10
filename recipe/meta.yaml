@@ -54,6 +54,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - mt-ob
     - saikonen
     - savingoyal
-    - madhur-ob
